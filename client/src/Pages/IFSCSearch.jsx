@@ -11,7 +11,7 @@ const branchesData = [
   { bank: "Axis Bank", city: "T Nagar", state: "Tamil Nadu", ifsc: "UTIB0001235", micr: "600211235", address: "Usman Road, T Nagar, Chennai - 600017", contact: "044-24341234" },
 ];
 
-const IFSCSearch = () => {
+const IfscSearch = () => {
   const [selectedBank, setSelectedBank] = useState("");
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
@@ -111,4 +111,4 @@ const IFSCSearch = () => {
   );
 };
 
-export default IFSCSearch;
+export default IfscSearch;
