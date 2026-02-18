@@ -6,7 +6,7 @@ const blogPosts = [
     title: "How to Find IFSC Codes for Indian Banks",
     excerpt:
       "Learn how to search IFSC codes of bank branches across India quickly and accurately for NEFT, RTGS & IMPS transactions.",
-    image: "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=800&q=80", // bank/finance
+    image: "assets/blog1.jpeg", // bank/finance
     date: "Feb 18, 2026",
     author: "Admin",
     category: "Banking Tips",
@@ -16,7 +16,7 @@ const blogPosts = [
     title: "Top EMI Calculator Tips for Smart Borrowers",
     excerpt:
       "Understand how EMI works, compare interest rates, and save money using smart EMI calculation techniques.",
-    image: "https://images.unsplash.com/photo-1576029830799-0df2f4a2aef4?auto=format&fit=crop&w=800&q=80", // finance planning
+    image:  "assets/blog2.jpeg",
     date: "Feb 16, 2026",
     author: "Admin",
     category: "Finance",
@@ -26,7 +26,7 @@ const blogPosts = [
     title: "White Label Finance Platforms: Launch Your Brand",
     excerpt:
       "A step-by-step guide to start your own finance brand with white-label platforms including mobile and web templates.",
-    image: "https://images.unsplash.com/photo-1581093588401-78f3b0b5c396?auto=format&fit=crop&w=800&q=80", // fintech photo
+    image:  "assets/blog3.jpeg",
     date: "Feb 14, 2026",
     author: "Admin",
     category: "Fintech",
@@ -36,7 +36,7 @@ const blogPosts = [
     title: "Top Banks in India and Their Services Overview",
     excerpt:
       "Compare popular banks in India, their loans, credit cards, investment options, and branch availability.",
-    image: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=800&q=80", // banking tech
+    image:"assets/blog4.jpeg",
     date: "Feb 12, 2026",
     author: "Admin",
     category: "Banking",
@@ -46,7 +46,7 @@ const blogPosts = [
     title: "Investing in Mutual Funds: A Beginner's Guide",
     excerpt:
       "Discover how mutual funds work, how to pick the right fund, and tips for maximizing returns in 2026.",
-    image: "https://images.unsplash.com/photo-1567428486317-4ddeadf84c4c?auto=format&fit=crop&w=800&q=80", // finance charts
+    image:"assets/blog5.jpeg",
     date: "Feb 10, 2026",
     author: "Admin",
     category: "Investment",
@@ -56,7 +56,7 @@ const blogPosts = [
     title: "Digital Lending Platforms: Pros & Cons",
     excerpt:
       "Learn about modern digital lending platforms, their advantages over traditional systems, and what to watch out for.",
-    image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80", // finance tech
+    image:"assets/blog6.png", // finance tech
     date: "Feb 8, 2026",
     author: "Admin",
     category: "Fintech",

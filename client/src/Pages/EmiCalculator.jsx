@@ -28,7 +28,7 @@ const EmiCalculator = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-6">
+    <div className="min-h-screen bg-gray-50 py-12 px-6 mt-10">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">EMI Calculator</h1>
         <div className="grid lg:grid-cols-2 gap-8">

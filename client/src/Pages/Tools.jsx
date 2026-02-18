@@ -7,7 +7,7 @@ const Tools = () => {
     <section className="flex flex-col md:flex-row items-center justify-between bg-gray-50 p-10 rounded-2xl shadow-xl gap-10 mt-16 relative overflow-hidden ">
 
     
-<div className="flex-1 flex justify-start md:justify-start ">
+<div className="flex-1 flex justify-start md:justify-start hidden md:block ">
   <Link
     to="/tools"
     className="flex  items-center justify-center w-40 h-12 space-y-6 rounded-2xl p-4 text-white font-bold shadow-2xl

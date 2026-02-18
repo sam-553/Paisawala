@@ -38,7 +38,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to="/cards"
+            to="/card"
             className="flex items-center gap-1 hover:text-blue-600 transition-colors"
           >
             Cards
@@ -63,7 +63,7 @@ const Navbar = () => {
           </Link>
 
           {/* Credit Score Button */}
-          <button className="relative flex items-center px-4 py-2 rounded-full overflow-hidden font-medium text-white mr-28 
+          <Link to='/creaditscoreform' className="relative flex items-center px-4 py-2 rounded-full overflow-hidden font-medium text-white mr-28 
             bg-gradient-to-r from-blue-500 to-blue-700 
             hover:from-blue-600 hover:to-blue-800 
             transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
@@ -76,11 +76,11 @@ const Navbar = () => {
             </span>
 
             <span className="ml-16 text-white tracking-wide">Credit Score</span>
-          </button>
+          </Link>
 
           {/* Login Link */}
           <Link
-            to="/login"
+            to="/signin"
             className="text-gray-700 font-medium hover:text-blue-600 transition-colors bg-gray-200 px-4 py-2 rounded-md"
           >
             Login
@@ -98,8 +98,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white shadow-lg px-6 pb-6 overflow-hidden transition-max-height duration-500 ${
-          open ? "max-h-96" : "max-h-0"
+        className={`md:hidden bg-white shadow-lg px-6  overflow-hidden transition-max-height duration-500 ${
+          open ? "max-h-98" : "max-h-0"
         }`}
       >
         <nav className="flex flex-col gap-4 text-gray-700 font-medium">
@@ -109,7 +109,7 @@ const Navbar = () => {
           <Link to="/loans" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
             Loans
           </Link>
-          <Link to="/cards" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
+          <Link to="/card" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
             Cards
           </Link>
           <Link to="/tools" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">

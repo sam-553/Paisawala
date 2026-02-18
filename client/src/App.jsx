@@ -12,6 +12,11 @@ import ShortTermLoan from './Pages/ShortTermLoan'
 import EmiCalculator from './Pages/EmiCalculator'
 import IFSCSearch from './Pages/IfscSearch'
 import Blog from './Pages/Blog'
+import Card from './Pages/Cards'
+import SignIn from './Pages/Signin'
+import SignUp from './Pages/Signup'
+import SideButton from './Component/SideButton'
+import CreditScoreForm from './Pages/CreditScoreForm'
 
 
 
@@ -19,6 +24,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <SideButton/>
       <Routes>
        <Route path="/" element={<Home />} />
         <Route path="/loans" element={<Loan />} />
@@ -31,6 +37,11 @@ const App = () => {
         
         <Route path="/ifscsearch" element={<IFSCSearch />} />
         <Route path="/blog" element={<Blog />} />
+        
+        <Route path="/card" element={<Card />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/creaditscoreform" element={< CreditScoreForm />} />
         
         
 
