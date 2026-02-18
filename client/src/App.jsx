@@ -10,13 +10,14 @@ import DebtConsolidation from './Pages/DebConsolidation'
 import Overdraft from './Pages/OverDraft'
 import ShortTermLoan from './Pages/ShortTermLoan'
 import EmiCalculator from './Pages/EmiCalculator'
-import IFSCSearch from './Pages/IfscSearch'
+
 import Blog from './Pages/Blog'
 import Card from './Pages/Cards'
 import SignIn from './Pages/Signin'
 import SignUp from './Pages/Signup'
 import SideButton from './Component/SideButton'
 import CreditScoreForm from './Pages/CreditScoreForm'
+import IFSCSearch from './Pages/IfscSearch'
 
 
 
@@ -35,7 +36,7 @@ const App = () => {
         <Route path="/shorttermloan" element={<ShortTermLoan />} />
         <Route path="/emicalculator" element={<EmiCalculator />} />
         
-        <Route path="/ifscsearch" element={<IFSCSearch />} />
+        <Route path="/ifscsearch" element={<IFSCSearch/>} />
         <Route path="/blog" element={<Blog />} />
         
         <Route path="/card" element={<Card />} />
