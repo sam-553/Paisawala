@@ -17,7 +17,8 @@ import SignIn from './Pages/Signin'
 import SignUp from './Pages/Signup'
 import SideButton from './Component/SideButton'
 import CreditScoreForm from './Pages/CreditScoreForm'
-import IFSCSearch from './Pages/IfscSearch'
+import IfscSearch from './Pages/IfscSearch'
+
 
 
 
@@ -36,7 +37,7 @@ const App = () => {
         <Route path="/shorttermloan" element={<ShortTermLoan />} />
         <Route path="/emicalculator" element={<EmiCalculator />} />
         
-        <Route path="/ifscsearch" element={<IFSCSearch/>} />
+        <Route path="/ifscsearch" element={<IfscSearch/>} />
         <Route path="/blog" element={<Blog />} />
         
         <Route path="/card" element={<Card />} />
