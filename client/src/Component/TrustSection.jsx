@@ -35,7 +35,7 @@ const TrustSection = () => {
               rel="noopener noreferrer"
 
               
-              className="border-2 border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-purple-600 transition">
+              className="border-2 border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-purple-600 transition text-center ">
                 Chat With Us
               </Link>
 
