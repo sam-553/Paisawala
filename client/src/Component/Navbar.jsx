@@ -27,32 +27,26 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to="/loans"
+            to="/aboutus"
             className="flex items-center gap-1 hover:text-blue-600 transition-colors relative group"
           >
-            Loans
-            <ChevronDown
-              className="transition-transform duration-300 group-hover:rotate-180"
-              size={16}
-            />
+          About Us
+            
           </Link>
 
           <Link
-            to="/card"
+            to="/termsconditions"
             className="flex items-center gap-1 hover:text-blue-600 transition-colors"
           >
-            Cards
+            Term & Conditions
           </Link>
 
           <Link
-            to="/tools"
+            to="/privacy"
             className="flex items-center gap-1 hover:text-blue-600 transition-colors relative group"
           >
-            Tools
-            <ChevronDown
-              className="transition-transform duration-300 group-hover:rotate-180"
-              size={16}
-            />
+            Privacy Policy
+            
           </Link>
 
           <Link
@@ -62,28 +56,13 @@ const Navbar = () => {
             Blog
           </Link>
 
-          {/* Credit Score Button */}
-          <Link to='/creaditscoreform' className="relative flex items-center px-4 py-2 rounded-full overflow-hidden font-medium text-white mr-28 
-            bg-gradient-to-r from-blue-500 to-blue-700 
-            hover:from-blue-600 hover:to-blue-800 
-            transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
-          >
-            {/* Free Badge at the left border */}
-            <span className="absolute left-0 top-0 h-full w-14 flex items-center justify-center bg-white text-green-500 font-bold rounded-l-full 
-              shadow-inner transform hover:scale-110 transition-transform duration-300"
-            >
-              Free
-            </span>
-
-            <span className="ml-16 text-white tracking-wide">Credit Score</span>
-          </Link>
-
-          {/* Login Link */}
+         
+        
           <Link
-            to="/signin"
+            to="#"
             className="text-gray-700 font-medium hover:text-blue-600 transition-colors bg-gray-200 px-4 py-2 rounded-md"
           >
-            Login
+          Download App Now
           </Link>
         </nav>
 
@@ -106,14 +85,14 @@ const Navbar = () => {
           <Link to="/" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
             Home
           </Link>
-          <Link to="/loans" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
-            Loans
+          <Link to="/aboutus" onClick={() => setOpen(false)}  className="hover:text-blue-600 transition-colors">
+           About Us
           </Link>
-          <Link to="/card" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
-            Cards
+          <Link to="/termsconditions" className="hover:text-blue-600 transition-colors" onClick={() => setOpen(false)} >
+            Term & Conditions
           </Link>
-          <Link to="/tools" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
-            Tools
+          <Link to="/privacy" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
+           Privacy Policy
           </Link>
           <Link to="/blog" onClick={() => setOpen(false)} className="hover:text-blue-600 transition-colors">
             Blog

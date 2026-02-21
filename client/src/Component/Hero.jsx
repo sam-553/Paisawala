@@ -5,25 +5,25 @@ const cards = [
     title: "Instant Personal Loan",
     subtitle: "Fast Approval • Quick Disbursal",
     desc: "Apply online in minutes and get instant loan approval with minimal documents. Simple, secure and hassle-free process.",
-    btn: "Apply Now",
+    btn: "Download App Now",
   },
   {
     title: "Check Credit Score Free",
     subtitle: "No Cost • No Impact",
     desc: "Track your credit health anytime. Get your credit score instantly and improve your chances for better loan offers.",
-    btn: "Check Score",
+    btn: "Download App Now",
   },
   {
     title: "Best Credit Cards",
     subtitle: "Cashback • Rewards • Travel",
     desc: "Compare top credit cards with exclusive benefits, cashback offers and easy approval — all in one place.",
-    btn: "Explore Cards",
+    btn: "Download App Now",
   },
   {
     title: "Build Good Credit Score",
     subtitle: "Better Loans • Lower Interest",
     desc: "Maintain a strong credit profile to unlock premium financial products, higher limits and lower interest rates.",
-    btn: "Learn More",
+    btn: "Download App Now",
   },
 ];
 const stats = [
@@ -62,9 +62,7 @@ const Hero = () => {
 
         {/* LEFT TEXT */}
         <div>
-          <p className="text-sm mb-4 text-green-300 tracking-widest uppercase">
-            Paisewaala
-          </p>
+         
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             Aapki Choti Zarurato ka  
@@ -130,7 +128,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Arrows */}
+        
           <button
             onClick={prev}
             className="absolute left-[-25px] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg"

@@ -56,7 +56,7 @@ const blogPosts = [
     title: "Digital Lending Platforms: Pros & Cons",
     excerpt:
       "Learn about modern digital lending platforms, their advantages over traditional systems, and what to watch out for.",
-    image:"assets/blog6.png", // finance tech
+    image:"assets/blog6.png", 
     date: "Feb 8, 2026",
     author: "Admin",
     category: "Fintech",

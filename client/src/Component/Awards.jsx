@@ -88,17 +88,7 @@ const Awards=()=> {
             <span className="text-purple-600"> Paisewaala</span>
           </h2>
 
-          <div className="flex flex-wrap justify-center gap-10 text-xl font-bold text-gray-700">
-            <span className="hover:text-purple-600 transition">
-              Business Standard
-            </span>
-            <span className="hover:text-purple-600 transition">
-              NDTV Profit
-            </span>
-            <span className="hover:text-purple-600 transition">
-              India Trust of India
-            </span>
-          </div>
+         
         </div>
       </div>
     </section>

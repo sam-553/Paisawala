@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TrustSection = () => {
+  const number="917232246247";
+  const message="Hi Paisewaala team, I want more details about your services.";
+  const encodedMessage=encodeURIComponent(message);
   return (
     <section className="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-700 text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          {/* LEFT CONTENT */}
           <div>
             <p className="text-purple-200 mb-2">Paisewaala Motto</p>
 
@@ -24,17 +27,19 @@ const TrustSection = () => {
             </h3>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <button className="bg-white text-purple-600 px-8 py-3 rounded-full font-medium hover:bg-purple-50 transition">
-                Schedule A Call
-              </button>
+             
 
-              <button className="border-2 border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-purple-600 transition">
+              <Link 
+              to={`https://wa.me/${number}?text=${encodedMessage}`}
+              target="_blank"
+              rel="noopener noreferrer"
+
+              
+              className="border-2 border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-purple-600 transition">
                 Chat With Us
-              </button>
+              </Link>
 
-              <button className="border-2 border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-purple-600 transition">
-                Book A Slot
-              </button>
+            
             </div>
           </div>
 

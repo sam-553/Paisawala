@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CreditScore = () => {
-  const [score, setScore] = useState(300);
+  const [score, setScore] = useState(700);
 
   const getStatus = () => {
     if (score < 500) return "Very Poor";
