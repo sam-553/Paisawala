@@ -8,11 +8,11 @@ const cards = [
     btn: "Download App Now",
   },
   {
-    title: "Check Credit Score Free",
-    subtitle: "No Cost • No Impact",
-    desc: "Track your credit health anytime. Get your credit score instantly and improve your chances for better loan offers.",
-    btn: "Download App Now",
-  },
+  title: "Credit Card",
+  subtitle: "Instant Approval • Reward Benefits",
+  desc: "Apply for a credit card with exclusive rewards, cashback offers, and flexible repayment options. Enjoy secure transactions and build your credit score with every purchase.",
+  btn: "Download App Now",
+},
 ];
 
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
     setActive((prev) => (prev - 1 + cards.length) % cards.length);
 
   return (
-    <section className="bg-gradient-to-br from-purple-700 via-indigo-700 to-teal-600 text-white py-14 sm:py-16 md:py-24 px-4 sm:px-6 relative overflow-hidden mt-8">
+    <section className="bg-gradient-to-br from-purple-700 via-indigo-700 to-teal-600 text-white py-14 sm:py-16 md:py-24 px-4 sm:px-6 relative overflow-hidden mt-10">
 
       {/* Glow Effect */}
       <div className="absolute w-[350px] sm:w-[400px] md:w-[500px] h-[350px] sm:h-[400px] md:h-[500px] bg-purple-500 opacity-20 blur-[120px] rounded-full top-[-120px] left-[-120px]" />
