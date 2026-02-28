@@ -84,9 +84,11 @@ const Hero = () => {
                 {cards[active].desc}
               </p>
 
-              <button className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full font-medium hover:scale-105 hover:shadow-lg transition">
+              <a
+              href="https://paisewaala.in/Paisewaala.apk"
+              className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full font-medium hover:scale-105 hover:shadow-lg transition">
                 {cards[active].btn}
-              </button>
+              </a>
             </div>
 
             {/* Dots */}

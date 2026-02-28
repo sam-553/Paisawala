@@ -71,7 +71,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
          <a
-  href="https://finance.cheapkart.in/cheapkart-finance.apk"
+  href="https://paisewaala.in/Paisewaala.apk"
   className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-semibold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg hover:shadow-2xl hover:scale-105 active:scale-95 group"
 >
   <span className="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-10 transition duration-300"></span>
