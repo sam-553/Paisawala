@@ -3,13 +3,13 @@ import { MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SideButton = () => {
-  const phoneNumber = "917232246247"; 
+  const phoneNumber = "919011085007"; 
   const message = "Hi Paisewaala team, I want more details about your services.";
   const encodedMessage = encodeURIComponent(message);
 
   return (
     <>
-      <div className="fixed right-5 bottom-20 flex flex-col gap-4 z-50">
+      <div className="fixed right-5 bottom-2 flex flex-col gap-4 z-50">
 
        
         <Link

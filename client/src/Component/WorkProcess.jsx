@@ -5,7 +5,7 @@ const WorkProcess = () => {
     <section className="bg-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
         
-        {/* Heading */}
+        
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           How <span className="text-purple-600">Paisewaala Works</span>
         </h2>
@@ -27,10 +27,10 @@ const WorkProcess = () => {
           of joy are a big concern for us
         </p>
 
-        {/* Steps Grid */}
+       
         <div className="grid md:grid-cols-4 gap-8">
           
-          {/* Step 1 */}
+          
           <div className="text-center">
             <div className="bg-purple-100 w-32 h-32 rounded-2xl mx-auto mb-6 flex items-center justify-center text-purple-600 text-4xl">
               📄
@@ -45,7 +45,7 @@ const WorkProcess = () => {
             </p>
           </div>
 
-          {/* Step 2 */}
+         
           <div className="text-center">
             <div className="bg-blue-100 w-32 h-32 rounded-2xl mx-auto mb-6 flex items-center justify-center text-blue-600 text-4xl">
               ✔
@@ -62,7 +62,7 @@ const WorkProcess = () => {
             </p>
           </div>
 
-          {/* Step 3 */}
+          
           <div className="text-center">
             <div className="bg-green-100 w-32 h-32 rounded-2xl mx-auto mb-6 flex items-center justify-center text-green-600 text-4xl">
               🎯
@@ -79,7 +79,7 @@ const WorkProcess = () => {
             </p>
           </div>
 
-          {/* Step 4 */}
+         
           <div className="text-center">
             <div className="bg-yellow-100 w-32 h-32 rounded-2xl mx-auto mb-6 flex items-center justify-center text-yellow-600 text-4xl">
               ₹

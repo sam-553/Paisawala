@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const TrustSection = () => {
-  const number="917232246247";
+  const number="919011085007";
   const message="Hi Paisewaala team, I want more details about your services.";
   const encodedMessage=encodeURIComponent(message);
   return (

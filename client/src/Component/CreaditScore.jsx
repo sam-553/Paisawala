@@ -11,16 +11,15 @@ const CreditScore = () => {
     return "Excellent";
   };
 
-  // Needle rotation
   const rotation = ((score - 300) / 600) * 180 - 90;
 
   return (
-    <section className="bg-gradient-to-r from-blue-50 to-cyan-50 py-16 px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
+    <section className="bg-gradient-to-r from-blue-50 to-cyan-50 py-12 md:py-16 px-4 sm:px-6 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+
         {/* LEFT CONTENT */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Know Your <span className="text-purple-600">Credit Health</span>
           </h2>
 
@@ -28,21 +27,23 @@ const CreditScore = () => {
             Move the slider to check how credit score category changes.
           </p>
 
-          {/* Slider */}
           <input
             type="range"
             min="300"
             max="900"
             value={score}
             onChange={(e) => setScore(Number(e.target.value))}
-            className="w-full max-w-md accent-purple-600"
+            className="w-full accent-purple-600"
           />
         </div>
 
         {/* RIGHT GAUGE */}
-        <div className="relative w-96 h-48 mx-auto">
-          <svg viewBox="0 0 200 120" className="w-full">
+        <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto">
 
+          <svg
+            viewBox="0 0 200 120"
+            className="w-full h-auto"
+          >
             {/* Colored arcs */}
             <path d="M 20 100 A 80 80 0 0 1 50 30"
               fill="none" stroke="#ef4444" strokeWidth="16" strokeLinecap="round" />
@@ -68,19 +69,29 @@ const CreditScore = () => {
             </g>
           </svg>
 
-          {/* Labels */}
-          <div className="absolute top-2 left-4 text-xs font-medium text-red-600">VERY POOR</div>
-          <div className="absolute top-2 left-1/4 text-xs font-medium text-orange-600">POOR</div>
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 text-xs font-medium text-yellow-600">FAIR</div>
-          <div className="absolute top-2 right-1/4 text-xs font-medium text-lime-600">GOOD</div>
-          <div className="absolute top-2 right-4 text-xs font-medium text-green-600">EXCELLENT</div>
+          {/* Labels (Responsive positioning) */}
+          <div className="absolute top-1 left-2 text-[10px] sm:text-xs font-medium text-red-600">
+            VERY POOR
+          </div>
+          <div className="absolute top-1 left-[22%] text-[10px] sm:text-xs font-medium text-orange-600">
+            POOR
+          </div>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[10px] sm:text-xs font-medium text-yellow-600">
+            FAIR
+          </div>
+          <div className="absolute top-1 right-[22%] text-[10px] sm:text-xs font-medium text-lime-600">
+            GOOD
+          </div>
+          <div className="absolute top-1 right-2 text-[10px] sm:text-xs font-medium text-green-600">
+            EXCELLENT
+          </div>
 
           {/* Score display */}
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-center">
-            <div className="text-5xl font-bold text-gray-800 mb-1">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-1">
               {score}
             </div>
-            <div className="text-lg font-semibold text-gray-600">
+            <div className="text-base sm:text-lg font-semibold text-gray-600">
               {getStatus()}
             </div>
           </div>

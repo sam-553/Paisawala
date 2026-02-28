@@ -13,64 +13,41 @@ const cards = [
     desc: "Track your credit health anytime. Get your credit score instantly and improve your chances for better loan offers.",
     btn: "Download App Now",
   },
-  {
-    title: "Best Credit Cards",
-    subtitle: "Cashback • Rewards • Travel",
-    desc: "Compare top credit cards with exclusive benefits, cashback offers and easy approval — all in one place.",
-    btn: "Download App Now",
-  },
-  {
-    title: "Build Good Credit Score",
-    subtitle: "Better Loans • Lower Interest",
-    desc: "Maintain a strong credit profile to unlock premium financial products, higher limits and lower interest rates.",
-    btn: "Download App Now",
-  },
-];
-const stats = [
-  { value: "84%", label: "Conversion Ratio" },
-  { value: "2150Cr", label: "Assets Managed" },
-  { value: "96%", label: "Customer Satisfaction" },
-  { value: "980+", label: "Location Served" },
 ];
 
 const Hero = () => {
   const [active, setActive] = useState(0);
   const [pause, setPause] = useState(false);
 
-  // Auto slider
   useEffect(() => {
     if (pause) return;
-
     const timer = setInterval(() => {
       setActive((prev) => (prev + 1) % cards.length);
     }, 3500);
-
     return () => clearInterval(timer);
   }, [pause]);
 
-  const next = () => setActive((active + 1) % cards.length);
+  const next = () => setActive((prev) => (prev + 1) % cards.length);
   const prev = () =>
-    setActive((active - 1 + cards.length) % cards.length);
+    setActive((prev) => (prev - 1 + cards.length) % cards.length);
 
   return (
-    <section className="bg-gradient-to-br from-purple-700 via-indigo-700 to-teal-600 text-white py-24 px-6 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-purple-700 via-indigo-700 to-teal-600 text-white py-14 sm:py-16 md:py-24 px-4 sm:px-6 relative overflow-hidden mt-8">
 
       {/* Glow Effect */}
-      <div className="absolute w-[500px] h-[500px] bg-purple-500 opacity-20 blur-[120px] rounded-full top-[-100px] left-[-100px]" />
+      <div className="absolute w-[350px] sm:w-[400px] md:w-[500px] h-[350px] sm:h-[400px] md:h-[500px] bg-purple-500 opacity-20 blur-[120px] rounded-full top-[-120px] left-[-120px]" />
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
 
         {/* LEFT TEXT */}
-        <div>
-         
-
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Aapki Choti Zarurato ka  
-            <span className="text-yellow-300"> Bharosemand </span>  
+        <div className="text-center md:text-left">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug md:leading-tight mb-6">
+            Aapki Choti Zarurato ka{" "}
+            <span className="text-yellow-300">Bharosemand</span>{" "}
             Saathi
           </h1>
 
-          <p className="text-white/80 max-w-md">
+          <p className="text-white/80 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
             Instant loans, credit cards, EMI tools & financial solutions —
             all in one platform.
           </p>
@@ -78,12 +55,12 @@ const Hero = () => {
 
         {/* RIGHT SLIDER */}
         <div
-          className="relative"
+          className="relative w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto"
           onMouseEnter={() => setPause(true)}
           onMouseLeave={() => setPause(false)}
         >
           {/* Card */}
-          <div className="backdrop-blur-xl bg-white/90 rounded-3xl shadow-2xl p-8 text-gray-800 transition-all duration-700">
+          <div className="backdrop-blur-xl bg-white/90 rounded-3xl shadow-2xl p-5 sm:p-6 md:p-8 text-gray-800 transition-all duration-700 min-h-[380px] flex flex-col justify-between">
 
             {/* Browser Header */}
             <div className="flex items-center space-x-2 mb-6">
@@ -94,20 +71,20 @@ const Hero = () => {
             </div>
 
             {/* Content */}
-            <div className="min-h-[240px] transition-all duration-700">
-              <h2 className="text-2xl font-bold text-purple-700 mb-3">
+            <div>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-700 mb-3">
                 {cards[active].title}
               </h2>
 
-              <p className="text-gray-500 mb-2">
+              <p className="text-gray-500 mb-2 text-sm sm:text-base">
                 {cards[active].subtitle}
               </p>
 
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 text-sm sm:text-base">
                 {cards[active].desc}
               </p>
 
-              <button className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full font-medium hover:scale-105 hover:shadow-lg transition">
+              <button className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full font-medium hover:scale-105 hover:shadow-lg transition">
                 {cards[active].btn}
               </button>
             </div>
@@ -128,24 +105,23 @@ const Hero = () => {
             </div>
           </div>
 
-        
+          {/* Desktop Arrows Only */}
           <button
             onClick={prev}
-            className="absolute left-[-25px] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg"
+            className="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg"
           >
             ◀
           </button>
 
           <button
             onClick={next}
-            className="absolute right-[-25px] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg"
+            className="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg"
           >
             ▶
           </button>
         </div>
       </div>
     </section>
-    
   );
 };
 
